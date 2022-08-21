@@ -10,13 +10,15 @@ import { useRef, useState, useEffect } from 'react'
 import { Logo } from '../Logo'
 
 export function Header() {
-  const ref = useRef(null)
+  const ref = useRef()
 
   const [width, setWidth] = useState(0)
 
   useEffect(() => {
-    if (ref !== null) {
-      setWidth(ref.current.offsetWidth)
+    if (ref && ref.current) {
+      // eslint-disable-next-line dot-notation
+      const parentWidth = ref.current['offsetWidth']
+      setWidth(parentWidth!)
     }
   }, [ref])
 
