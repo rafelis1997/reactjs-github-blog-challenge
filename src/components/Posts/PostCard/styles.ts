@@ -33,6 +33,7 @@ export const CardContainer = styled.div`
 
   &:hover {
     outline: 2px solid ${(props) => props.theme['base-label']};
+    -moz-outline-radius: 8px;
   }
 `
 
@@ -44,5 +45,5 @@ export const PostCardBody = styled.div`
   line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 85%;
-  max-height: 250px;
+  max-height: 200px;
 `
