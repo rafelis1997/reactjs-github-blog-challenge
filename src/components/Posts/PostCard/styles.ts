@@ -44,9 +44,5 @@ export const PostCardBody = styled.div`
   line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 85%;
-  max-height: 600px;
-
-  h3 {
-    margin-bottom: 0;
-  }
+  max-height: 250px;
 `
