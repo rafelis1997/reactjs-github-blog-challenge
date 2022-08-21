@@ -10,7 +10,7 @@ import { useRef, useState, useEffect } from 'react'
 import { Logo } from '../Logo'
 
 export function Header() {
-  const ref = useRef()
+  const ref = useRef(null)
 
   const [width, setWidth] = useState(0)
 
