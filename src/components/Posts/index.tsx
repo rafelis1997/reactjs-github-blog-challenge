@@ -21,14 +21,14 @@ export function Posts() {
     if (query) {
       const response = await api.get(`/search/issues`, {
         params: {
-          q: `repo:rafelis1997/reactjs-github-blog-challenge label:published ${query}`,
+          q: `repo:rafelis1997/reactjs-github-blog-challenge label:published author:rafelis1997 ${query}`,
         },
       })
 
       setPosts(response.data.items)
     } else {
       const response = await api.get(
-        `/search/issues?q=repo:rafelis1997/reactjs-github-blog-challenge label:published`,
+        `/search/issues?q=repo:rafelis1997/reactjs-github-blog-challenge label:published author:rafelis1997`,
       )
 
       setPosts(response.data.items)
