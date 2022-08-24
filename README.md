@@ -6,7 +6,7 @@
 
 This is a study project made to develop ReactJS and learn it's concepts.
 
-In this project I've build a ReactJS in this project i've made a personal blog using github api to retrieve the issues as a way to publish posts, I've also added
+In this project I've build a ReactJS personal blog using github api to retrieve the issues as a way to publish posts, I've also added
 a filter to only show issues with the published tag so i can do post drafts and control what is shown in the post's feed. The main go here was to learn about REST API's
 and it's concepts.
 
